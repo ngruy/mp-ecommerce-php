@@ -1,5 +1,19 @@
-<!DOCTYPE html>
+<?php
+/**
+ * Examen de Certificación Developer - Mercado Pago.
+ * @link https://http2.mlstatic.com/frontend-assets/dx-devsite/devprogram/examen-certificacion-developers-checkout-pro-2.0.pdf
+ */
+
+// Ejecuto la solución del examen
+require 'mp.php';
+
+?>
+
+<!DOCTYPE html>-ecommerce-ph
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Script de Seguridad de Mercado Pago -->
+    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
     
     <meta name="viewport" content="width=1024">
     <title>Tienda e-commerce</title>
@@ -124,13 +138,13 @@
                                             </h3>
                                         </div>
                                         <h3 >
-                                            <?php echo $_POST['price'] ?>
+                                            <?php echo "$" .$_POST['price'] ?>
                                         </h3>
                                         <h3 >
-                                            <?php echo "$" . $_POST['unit'] ?>
+                                            <?php echo $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <button type="submit" class="mercadopago-button" formmethod="post" onclick="window.location.href = '<?= $_POST['init_point'] ?> '">Pagar la compra</button>
                                 </div>
                             </div>
                         </div>
