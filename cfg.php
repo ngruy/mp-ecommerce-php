@@ -14,7 +14,7 @@ define('SITE_URL',
 // Datos personales del pagador
 define('PAYER_NAME', 'Lalo');
 define('PAYER_SURNAME', 'Landa');
-define('PAYER_EMAIL', '"test_user_63274575@testuser.com"');
+define('PAYER_EMAIL', 'test_user_63274575@testuser.com');
 
 define('PHONE_CODE', '11');
 define('PHONE_NUMBER', '22223333');
