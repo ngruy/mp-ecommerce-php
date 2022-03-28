@@ -31,9 +31,5 @@ if (isset($merchant_order)) {
     error_log("Notificacion Webhook " . json_encode($merchant_order));
 }
 
-error_log('GET: type='.filter_input(INPUT_GET, 'type'));
-error_log('GET: data.id='.filter_input(INPUT_GET, 'data.id'));
-error_log('GET: topic='.filter_input(INPUT_GET, 'topic'));
-error_log('GET: id='.filter_input(INPUT_GET, 'id'));
 error_log("Notificacion Webhook - " . file_get_contents('php://input'));
 error_log(print_r($_GET));

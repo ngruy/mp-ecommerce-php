@@ -39,5 +39,4 @@ define('BACK_URL_SUCCESS', SITE_URL . '/res.php?res=' . RES_SUCCESS);
 define('BACK_URL_FAILURE', SITE_URL . '/res.php?res=' . RES_FAILURE);
 define('BACK_URL_PENDING', SITE_URL . '/res.php?res=' . RES_PENDING);
 
-//define('NOTIFY_WEBHOOK', 'https://eodbqac2vwnzie6.m.pipedream.net');
-define('NOTIFY_WEBHOOK', 'https://www.tectel.com.uy/notify.php');
+define('NOTIFY_WEBHOOK', 'https://eodbqac2vwnzie6.m.pipedream.net');
