@@ -5,6 +5,8 @@
  * Archivo con log de Notificaciones Webhook.
  * @link https://http2.mlstatic.com/frontend-assets/dx-devsite/devprogram/examen-certificacion-developers-checkout-pro-2.0.pdf
  */
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 // SDK de Mercado Pago
 require 'vendor/autoload.php';
