@@ -1,5 +1,8 @@
 {
-    "name": "mp-ecommerce-php",
+    "name": "ngruy/mp-ecommerce-php",
     "type": "project",
-    "require": {}
+    "require": {
+        "php": "~7.3.0",
+        "mercadopago/dx-php": "^2.0"
+    }
 }
