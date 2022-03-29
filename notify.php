@@ -10,10 +10,13 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-error_log("Notificacion Webhook - GET JSON: " . json_encode(var_dump($_GET)));
-error_log("\n");
-error_log("Notificacion Webhook - POST JSON: " . json_encode(var_dump($_POST)));
-error_log("\n");
+//error_log("Notificacion Webhook - GET JSON: " . json_encode(var_dump($_GET)));
+//error_log("\n");
+//error_log("Notificacion Webhook - POST JSON: " . json_encode(var_dump($_POST)));
+//error_log("\n");
+
+$data = file_get_contents('php://input');
+file_put_contents("php://stderr", $data . "\n");
 
 ////// SDK de Mercado Pago
 ////require 'vendor/autoload.php';
