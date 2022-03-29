@@ -113,6 +113,6 @@ $preference->payment_methods = array(
 $preference->save();
 
 // Guardo el punto de inicio de checkout.
-$_POST['init_point'] = $preference->init_point;
+$_POST['sandbox_init_point'] = $preference->sandbox_init_point;
 
 error_log(json_encode($preference));

@@ -144,16 +144,7 @@ require 'mp.php';
                                             <?php echo $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <!--<button type="submit" class="mercadopago-button" formmethod="post" onclick="window.location.href = '<?= $_POST['init_point'] ?> '">Pagar la compra</button>-->
-                                    <form action="/res.php"
-                                      method="POST">
-                                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                                            data-button-label="Pagar la compra"
-                                            data-elements-color="#2D3277"
-                                            data-header-color="#2D3277"
-                                            data-preference-id="<?php print $preference->id; ?>">
-                                    </script>
-                                </form>
+                                    <button type="submit" class="mercadopago-button" formmethod="post" onclick="window.location.href = '<?= $_POST['sandbox_init_point'] ?> '">Pagar la compra</button>
                                 </div>
                             </div>
                         </div>
