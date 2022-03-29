@@ -35,4 +35,9 @@ if (isset($merchant_order)) {
     error_log("MerchantOrder JSON: " . json_encode($merchant_order));
 }
 
-error_log("Notificacion Webhook - JSON: " . json_encode(file_get_contents('php://input')));
+error_log("Notificacion Webhook - input JSON: " . json_encode(file_get_contents('php://input')));
+error_log("\n\n\n");
+error_log("Notificacion Webhook - POST JSON: " . json_encode($_POST));
+error_log("\n\n\n");
+error_log("Notificacion Webhook - GET JSON: " . json_encode($_GET));
+error_log("\n\n\n");
