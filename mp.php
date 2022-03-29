@@ -114,3 +114,5 @@ $preference->save();
 
 // Guardo el punto de inicio de checkout.
 $_POST['init_point'] = $preference->init_point;
+
+error_log(json_encode($preference));
