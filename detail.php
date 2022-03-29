@@ -144,7 +144,7 @@ require 'mp.php';
                                             <?php echo $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post" onclick="window.location.href = '<?= $_POST['sandbox_init_point'] ?> '">Pagar la compra</button>
+                                    <button type="submit" class="mercadopago-button" formmethod="post" onclick="window.location.href = '<?= $_POST['init_point'] ?> '">Pagar la compra</button>
                                 </div>
                             </div>
                         </div>
